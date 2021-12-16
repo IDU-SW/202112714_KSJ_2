@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import Movie from "../components/Movie";
+import MovieCreationTwoTone from "@material-ui/icons/MovieCreationTwoTone";
+import CircularProgress from '@material-ui/core/CircularProgress';
+import '../Main.css'
 
 function Main(){
     //영화 API
@@ -23,7 +26,14 @@ function Main(){
 
   return (
     <div>
-      {loading? (<h1>Loading...</h1>) : (
+      
+      
+      {loading? (
+        <div>
+          {/* <CircularProgress color="inherit"/> */}
+          <div className="loading"><MovieCreationTwoTone fontSize="large"/></div>
+        </div>
+      ) : (
         <div>
           {movies.map((movie) => (
             <Movie
