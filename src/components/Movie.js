@@ -8,7 +8,7 @@ function Movie({id, mCoverImage, title, rating, runtime, year, summary, genres})
     return (
         <div>
             <div className={styles.movie}>
-                <Link to={`/movie/${id}`}>
+                <Link to={`/movie/${id}`} style={{textDecoration: 'none'}}>
                     <img src={mCoverImage} alt={title}/>
                     <h2 className={styles.movie_title}>{title}</h2>
                 </Link>
@@ -17,7 +17,7 @@ function Movie({id, mCoverImage, title, rating, runtime, year, summary, genres})
                         <span className={styles.movie_runtime}>{runtime}분 | </span> 
                         <span className={styles.movie_year}>({year})</span>
                     </div>
-                    <p className={styles.movie_summary}>{summary}</p>
+                    {/* <p className={styles.movie_summary}>{summary}</p> */}
                     <ul className={styles.movie_genres}>
                         {genres.map((genre) => (
                         <li key={genre}>{genre}</li>
