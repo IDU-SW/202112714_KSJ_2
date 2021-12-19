@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import Movie from "../components/Movie";
-import MovieCreationTwoTone from "@material-ui/icons/MovieCreationTwoTone";
-import CircularProgress from '@material-ui/core/CircularProgress';
-import '../Main.css'
+// import MovieCreationTwoTone from "@material-ui/icons/MovieCreationTwoTone";
+// import CircularProgress from '@material-ui/core/CircularProgress';
+import styles from './Main.module.css'
+import movieIcon from '../film.png'
 
 function Main(){
     //영화 API
@@ -26,30 +27,34 @@ function Main(){
 
   return (
     <div>
-      
-      
-      {loading? (
-        <div>
-          {/* <CircularProgress color="inherit"/> */}
-          <div className="loading"><MovieCreationTwoTone fontSize="large"/></div>
-        </div>
-      ) : (
-        <div>
-          {movies.map((movie) => (
-            <Movie
-              key={movie.id}
-              id={movie.id}
-              mCoverImage={movie.medium_cover_image}
-              title={movie.title}
-              rating={movie.rating}
-              runtime={movie.runtime}
-              year={movie.year}
-              summary={movie.summary}
-              genres={movie.genres}
-            />
-          ))}
-        </div>
-      )}
+      <section className={styles.container}>
+        {loading? (
+          <div>
+            {/* <CircularProgress color="inherit"/>
+            <div className="loading"><MovieCreationTwoTone fontSize="large"/></div> */}
+            <div className={styles.loading}><img src={movieIcon} style={{width:"100px"}}/></div>
+          </div>
+        ) : (
+          <div>
+            <h1 className={styles.logo_title}>Movie Awards</h1>
+            <div className={styles.movies}> 
+              {movies.map((movie) => (
+                <Movie
+                  key={movie.id}
+                  id={movie.id}
+                  mCoverImage={movie.medium_cover_image}
+                  title={movie.title}
+                  rating={movie.rating}
+                  runtime={movie.runtime}
+                  year={movie.year}
+                  summary={movie.summary}
+                  genres={movie.genres}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+      </section>
     </div>
   );
 }

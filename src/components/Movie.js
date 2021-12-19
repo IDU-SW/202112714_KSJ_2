@@ -1,20 +1,30 @@
+// import { StyleTwoTone } from "@material-ui/icons";
 import PropTypes from "prop-types";
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+import styles from "./Movie.module.css";
+
 
 function Movie({id, mCoverImage, title, rating, runtime, year, summary, genres}) {
     return (
         <div>
-            <img src={mCoverImage} alt={title}/>
-            <h2>
-                <Link to={`/movie/${id}`}>{title}</Link>
-            </h2>
-            <p>{rating}점 | {runtime}분 | ({year})</p>
-            <p>{summary}</p>
-            <ul>
-                {genres.map((genre) => (
-                <li key={genre}>{genre}</li>
-                ))}
-            </ul>
+            <div className={styles.movie}>
+                <Link to={`/movie/${id}`}>
+                    <img src={mCoverImage} alt={title}/>
+                    <h2 className={styles.movie_title}>{title}</h2>
+                </Link>
+                    <div className={styles.movie_detail}>
+                        <span className={styles.movie_rating}>{rating}점 | </span> 
+                        <span className={styles.movie_runtime}>{runtime}분 | </span> 
+                        <span className={styles.movie_year}>({year})</span>
+                    </div>
+                    <p className={styles.movie_summary}>{summary}</p>
+                    <ul className={styles.movie_genres}>
+                        {genres.map((genre) => (
+                        <li key={genre}>{genre}</li>
+                        ))}
+                    </ul>
+
+            </div>         
         </div>
     );
 }
