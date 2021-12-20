@@ -36,7 +36,9 @@ function Main(){
           </div>
         ) : (
           <div>
-            <h1 className={styles.logo_title}>Movie Awards</h1>
+            <div className={styles.logo_block}>
+              <h1 className={styles.logo_title}>Movie Awards</h1>
+            </div>
             <div className={styles.movies}> 
               {movies.map((movie) => (
                 <Movie

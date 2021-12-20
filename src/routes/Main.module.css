@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
 @keyframes rotator {
     0% {
         -webkit-transform: rotate(0deg) translateZ(0);
@@ -32,6 +34,14 @@
   text-align: center;
   text-decoration: overline;
   font-size: 2.5em;
+  font-family: "Monoton", Helvetica, sans-serif;
+  
+}
+
+.logo_block{
+  background-color: #a5a5a5;
+  padding: 10px;
+  box-shadow: 0 10px 50px 1px rgba(82, 82, 82, 0.25);
 }
 
 .movies {
