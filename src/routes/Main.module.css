@@ -11,6 +11,13 @@
     }
 }
 
+.loading_wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+}
+
 .loading {
     background-size: 100px 100px;
     display: flex;

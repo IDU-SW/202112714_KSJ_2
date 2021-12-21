@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 70px;
 }
 
 .loading {
@@ -135,7 +136,7 @@
 
     .bg_text{
         position:absolute;
-        top: 37%;
+        top: 55%;
         left: 50%;
         text-align: center;
         transform: translate( -50%, -50% );

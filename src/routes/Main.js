@@ -53,7 +53,9 @@ function Main(){
             <div>
               {/* <CircularProgress color="inherit"/>
               <div className="loading"><MovieCreationTwoTone fontSize="large"/></div> */}
-              <div className={styles.loading}><img src={movieIcon} style={{width:"100px"}}/></div>
+              <div className={styles.loading_wrap}>
+                <div className={styles.loading}><img src={movieIcon} style={{width:"100px"}}/></div>
+              </div>
             </div>
           ) : (
             <div>

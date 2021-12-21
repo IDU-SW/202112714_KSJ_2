@@ -21,11 +21,12 @@ function Detail(){
     return (
         <div className={styles.container}>
         {loading? (
-            <div className={styles.loading_wrap}>{
+            <div className={styles.loading_wrap}>
+                {
                 <div className={styles.loading}>
                     <img src={movieIcon} style={{width:"100px"}}/>
                 </div>
-            }
+                }
             </div>
         ) : (
             <div>
