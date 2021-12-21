@@ -1,6 +1,8 @@
 import styles from './Bookmark.module.css'
+import Main from '../routes/Main.js';
 
 function Bookmark({bookmark}){
+
     return (
         <div>
             <div>
@@ -10,7 +12,8 @@ function Bookmark({bookmark}){
                 <ul className={styles.bookmark_list}>
                     {bookmark.map((item) => (
                     <li key={item.id}>
-                        <img src={item} alt="movie"/>    
+                        <img src={item} alt="movie"/>
+                        
                     </li>
                     ))}
                 </ul>

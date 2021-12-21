@@ -23,7 +23,7 @@ function Movie({id, mCoverImage, title, rating, runtime, year, summary, genres, 
                         <li key={genre}>{genre}</li>
                         ))}
                     </ul>
-                    <button onClick={() => addBookmark(mCoverImage)}>북마크</button>
+                    <button onClick={() => addBookmark(mCoverImage)} className={styles.movie_bookmark}>나중에 볼 영상</button>
 
             </div>         
         </div>

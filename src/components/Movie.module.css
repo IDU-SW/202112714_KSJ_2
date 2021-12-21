@@ -71,3 +71,18 @@
   margin-right: 10px;
   font-size: 14px;
 }
+
+.movie_bookmark {
+  padding: 6px 12px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(196, 196, 196);
+
+}
+
+.movie_bookmark:hover {
+  background-color: #ff4284;
+  cursor: pointer;
+}
