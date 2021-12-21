@@ -26,8 +26,15 @@
 
 .container {
     height: 100%;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
+}
+
+.logo_block{
+  background-color: #a5a5a5;
+  padding: 10px;
+  box-shadow: 0 10px 50px 1px rgba(82, 82, 82, 0.25);
+  flex-wrap: wrap;
 }
 
 .logo_title{
@@ -38,10 +45,16 @@
   
 }
 
-.logo_block{
-  background-color: #a5a5a5;
-  padding: 10px;
-  box-shadow: 0 10px 50px 1px rgba(82, 82, 82, 0.25);
+.bookmark_main{
+  width: 70px;
+  float: right;
+  z-index: 10;
+  display: inline;
+}
+
+.bookmark_main:hover{
+  filter: opacity(0.7) drop-shadow(0 0 0 rgb(255, 0, 119));
+  filter: alpha(opacity=70); /* IE8 이하 ver. */
 }
 
 .movies {

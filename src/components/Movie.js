@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import styles from "./Movie.module.css";
 
 
-function Movie({id, mCoverImage, title, rating, runtime, year, summary, genres}) {
+function Movie({id, mCoverImage, title, rating, runtime, year, summary, genres, addBookmark}) {
     return (
         <div>
             <div className={styles.movie}>
@@ -23,6 +23,7 @@ function Movie({id, mCoverImage, title, rating, runtime, year, summary, genres})
                         <li key={genre}>{genre}</li>
                         ))}
                     </ul>
+                    <button onClick={() => addBookmark(mCoverImage)}>북마크</button>
 
             </div>         
         </div>

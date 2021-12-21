@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ubuntu+Mono&display=swap');
+
+.bookmark_text{
+    padding-left: 20px;
+    font-size: 2.5em;
+    font-family: "Dancing Script", Helvetica, sans-serif;
+}
+
+.count_text{
+    padding-left: 30px;
+    font-size: 1.2em;
+    font-family: "Ubuntu Mono", Helvetica, sans-serif;
+}
+
+.bookmark_list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookmark_list li{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.bookmark_list img{
+    width: 70%;
+    box-shadow: 0 10px 50px 1px rgba(75, 75, 119, 0.25);
+}
