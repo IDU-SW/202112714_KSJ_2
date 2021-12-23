@@ -1,4 +1,11 @@
 
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .movie {
     background-color: rgb(255, 255, 255);
     margin-bottom: 10px;
@@ -73,12 +80,13 @@
 }
 
 .movie_bookmark {
-  padding: 6px 12px;
+  padding: 7px 12px;
   color: white;
   font-size: 16px;
   border: none;
   border-radius: 20px;
   background-color: rgb(196, 196, 196);
+  font-family: 'GmarketSansLight'; 
 
 }
 

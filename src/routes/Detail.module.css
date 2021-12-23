@@ -105,6 +105,12 @@
     margin: 30px;
 }
 
+.movie_comment{
+    background-color: white;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 15px;
+}
 
 @media screen and (max-width: 768px){
     .detail{

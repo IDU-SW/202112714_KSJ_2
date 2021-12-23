@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Movie from "../components/Movie";
 import Bookmark from "../components/Bookmark";
 import Detail from "../routes/Detail";
+
 // import MovieCreationTwoTone from "@material-ui/icons/MovieCreationTwoTone";
 // import CircularProgress from '@material-ui/core/CircularProgress';
 import styles from './Main.module.css'
@@ -12,7 +13,7 @@ import {BrowserRouter, Route, Router, Link, Switch} from "react-router-dom";
 function Main(){
     //영화 API
   const [loading, setLoading] = useState(true);
-  const [movies, setMovies] = useState([])
+  const [movies, setMovies] = useState([]);
   const [bookmark, setBookmark] = useState([]);
   const getMovies = async() => {
     const json = await (
@@ -65,7 +66,7 @@ function Main(){
                   </Route>
                   <Route path="/bookmark">
                     <Bookmark bookmark={bookmark} />
-                  </Route>
+                  </Route>                  
                   <Route path="/">
                     <div className={styles.movies}> 
                       {movies.map((movie) => (

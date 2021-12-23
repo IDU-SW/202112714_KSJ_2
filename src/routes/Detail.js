@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styles from "./Detail.module.css";
 import movieIcon from '../film.png'
+import Comment from "../components/Comment"
 
 function Detail(){
     const [loading, setLoading] = useState(true);
@@ -48,7 +49,13 @@ function Detail(){
                             ))}
                         </ul>
                     </div>
+                    <div className={styles.movie_comment}>
+                        <Comment/>
+                    </div>
                 </div>
+               
+                
+                
             </div>
         )}
         </div>
