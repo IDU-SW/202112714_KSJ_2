@@ -30,7 +30,7 @@ function Comment(){
         <div>
             <div>
                 <div>
-                    <input type="text" id="new-comment-content" onKeyPress={onKeyPress} placeholder='🎞영화 코멘트를 달아주세요'></input>
+                    <input type="text" id="new-comment-content" className={styles.add_text} onKeyPress={onKeyPress} placeholder='🎞영화 코멘트를 달아주세요'></input>
                     <button onClick={()=>addComment()} className={styles.add_button}>게시</button>
                 </div>
                 <div>

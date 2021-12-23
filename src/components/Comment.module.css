@@ -1,3 +1,11 @@
+
+@font-face {
+    font-family: 'establishRetrosansOTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRetrosansOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .add_button {
     align-items: center;
     appearance: none;
@@ -10,13 +18,14 @@
     cursor: pointer;
     display: inline-flex;
     font-family: "JetBrains Mono",monospace;
-    height: 48px;
+    height: 40px;
     justify-content: center;
     line-height: 1;
     list-style: none;
     overflow: hidden;
-    padding-left: 16px;
+    padding-left: 14px;
     padding-right: 16px;
+    padding-top: 5px;
     position: relative;
     text-align: left;
     text-decoration: none;
@@ -27,6 +36,7 @@
     white-space: nowrap;
     will-change: box-shadow,transform;
     font-size: 18px;
+    font-family: 'establishRetrosansOTF';
   }
   
   .add_button:focus {
@@ -42,3 +52,28 @@
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
   }
+
+  .add_text {
+    border: 0;
+    outline: 0;
+    padding: 7px 0;
+    margin-right: 10px; 
+    width: 85%;
+    border-bottom: 2px solid #9b9b9b;
+  }
+
+  .add_text:focus {
+    border-bottom: 2px solid #535353; 
+  }
+
+
+  @media screen and (max-width: 394px){
+
+    .add_text {
+        width: 100%;
+    }
+    .add_button {
+        width: 100%;
+    }
+
+}
