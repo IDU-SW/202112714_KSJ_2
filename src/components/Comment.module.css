@@ -37,43 +37,52 @@
     will-change: box-shadow,transform;
     font-size: 18px;
     font-family: 'establishRetrosansOTF';
-  }
-  
-  .add_button:focus {
-    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  }
-  
-  /* .add_button:hover {
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-    transform: translateY(-2px);
-  } */
-  
-  .add_button:active {
-    box-shadow: #D6D6E7 0 3px 7px inset;
-    transform: translateY(2px);
-  }
+}
 
-  .add_text {
-    border: 0;
-    outline: 0;
-    padding: 7px 0;
-    margin-right: 10px; 
-    width: 85%;
-    border-bottom: 2px solid #9b9b9b;
-  }
+.add_button:focus {
+box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
 
-  .add_text:focus {
-    border-bottom: 2px solid #535353; 
-  }
+/* .add_button:hover {
+box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+transform: translateY(-2px);
+} */
+
+.add_button:active {
+box-shadow: #D6D6E7 0 3px 7px inset;
+transform: translateY(2px);
+}
+
+.add_text {
+border: 0;
+outline: 0;
+padding: 7px 0;
+margin-right: 10px; 
+width: 90%;
+border-bottom: 2px solid #9b9b9b;
+}
+
+.add_text:focus {
+border-bottom: 2px solid #535353; 
+}
 
 
-  @media screen and (max-width: 394px){
+@media screen and (max-width: 394px){
 
+.add_text {
+    width: 100%;
+}
+.add_button {
+    width: 100%;
+}
+
+}
+
+@media screen and (max-width: 1024px){
     .add_text {
         width: 100%;
     }
     .add_button {
         width: 100%;
     }
-
 }
