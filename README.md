@@ -18,13 +18,13 @@
 - 영화 데이터 API 불러오기 (뮤지컬 장르) 
 - 영화 전체보기 (/)
 - 영화 하나보기 (/movies/38331)
-- 영화 북마크 추가/해제
+- 영화 북마크 추가
 - 영화 북마크 모아보기 (/bookmark)
 - 영화 댓글 남기기
 
 ---
 
-### Library
+### 라이브러리
 - styled-components (일부사용. + CSS Module)
 - react-router-dom
 - react-scripts
